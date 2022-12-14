@@ -43,7 +43,7 @@ for i in range(len(map)-2):
         if available:
             adjacency[i*len(map[0])+j] = available
 
-min_path = 0
+min_path = 99999
 for start in starts:
     queue = [copy.copy(start)]
     visited = [copy.copy(start)]
